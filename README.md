@@ -8,10 +8,13 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. Data Collection
+2. Display the first and last few rows of the dataset using head() and tail() to ensure it's loaded correctly.
+3. Split the Data into Training and Testing Sets
+4. Create a Linear Regression model: Use LinearRegression() from sklearn.linear_model to instantiate the model.
+5. Use the trained model to make predictions on the test data (x_test) by calling the predict() method.
+6. Calculate the evaluation metrics.
+7. Visualize the training set results: Plot a scatter plot of the training data (x_train and y_train) and overlay the regression line (predicted values).
 
 ## Program:
 ```
@@ -20,6 +23,7 @@ Program to implement the simple linear regression model for predicting the marks
 Developed by:M.Mahalakshmi 
 RegisterNumber: 24900868 
 */
+```
 ```
 import pandas as pd
 import numpy as np
@@ -61,7 +65,7 @@ mae=mean_absolute_error(y_test,y_pred)
 print('MAE=',mae)
 rmse=np.sqrt(mse)
 print("RMSE=",rmse)
-
+```
 
 ## Output:
 ![simple linear regression model for predicting the marks scored](sam.png)
